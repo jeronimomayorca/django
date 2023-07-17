@@ -1,5 +1,5 @@
 """
-URL configuration for project1 project.
+URL configuration for project project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -17,18 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-# importamos el views.py para poder usar sus metodos en el path
-import hola_mundo.views
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hola_mundo.views.index, name='index'),
-    path('index/', hola_mundo.views.index, name='inicio'),
-    path('hello-world/', hola_mundo.views.hello_world, name='hello world'),
-    path('show-page/', hola_mundo.views.show_page, name='show page')
 ]
-
-# TODO: make navigation throughout pages
-
-
-
