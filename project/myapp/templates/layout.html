@@ -4,26 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            {% block title %}
-
-            {% endblock %}
+            {% block title %} {% endblock %}
             | Jeronimo Mayorca
         </title>
         {% load static %}
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" type="text/css"
+            href="{% static 'myapp/css/styles.css' %}">
     </head>
     <body>
-        <h1> Navbar </h1>
-        <ul>
-            <li> <a href="/index"> Index </a> </li>
-            <li> <a href="/contact"> Contact </a> </li>
-            <li> <a href="/about-me"> About Me </a> </li>
-        </ul>
 
-        <div id="contact">
+        <header>
+            <div class="logo">
+                <img src="{% static 'myapp/images/logo.png' %}" alt>
+                <h1>
+                    Sitio Web con Django
+                </h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="/index"> Home </a> </li>
+                <li> <a href="/contact"> Contact </a> </li>
+                <li> <a href="/about-me"> About Me </a> </li>
+            </ul>
+        </nav>
+
+        <div class="bar">
+            <span class="left-corner"></span>
+            <span class="bar-refill"></span>
+            <span class="right-corner"></span>
+        </div>
+
+        <div id="content">
+
+            <h2 class="title"> Título de prueba </h2>
+            <strong> Bloque original </strong>
+
             {% block content %}
-            <h1>content of father block</h1>
             <!--here goes the block content of each component-->
+            <h1>content of father block</h1>
             {% endblock %}
         </div>
 

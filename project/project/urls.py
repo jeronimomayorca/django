@@ -19,15 +19,14 @@ from django.urls import path
 from myapp import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('index/', views.index, name='index'),
-    path('contact/', views.contact, name='contact'),
-    path('about-me/', views.about_me, name='about-me'),
+    path("admin/", admin.site.urls),
+    path("", views.index, name="index"),
+    path("index/", views.index, name="index"),
+    path("contact/", views.contact, name="contact"),
+    path("about-me/", views.about_me, name="about-me"),
     # with parameters
-    path('say-hi/', views.say_hi, name='say-hi'),
+    path("say-hi/", views.say_hi, name="say-hi"),
     # optional parameters
-    path('say-hi/<str:name>', views.say_hi, name='say-hi'),
-    path('say-hi/<str:name>/<str:surname>', views.say_hi, name='say-hi'),
+    path("say-hi/<str:name>", views.say_hi, name="say-hi"),
+    path("say-hi/<str:name>/<str:surname>", views.say_hi, name="say-hi"),
 ]
-
