@@ -85,7 +85,6 @@ nav ul li a:hover{
 .bar{
     width: 1250px;
     margin: 0 auto;
-    margin-bottom: 140px;
 }
 
 .left-corner{
@@ -108,4 +107,42 @@ nav ul li a:hover{
     height: 10px;
     background: #2b2f30;
     float: left;
+}
+
+#content{
+    width: 1212px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.box{
+    background: white;
+    width: 95%;
+    min-height: 935px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+.title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 1250px;
+    background-color: #1b1e1f;
+    border: 1px solid #333;
+    color: #D1D4D6;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
+    margin: 0 auto;
 }

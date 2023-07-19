@@ -38,17 +38,21 @@
 
         <div id="content">
 
-            <h2 class="title"> Título de prueba </h2>
-            <strong> Bloque original </strong>
+            <div class="box">
 
-            {% block content %}
-            <!--here goes the block content of each component-->
-            <h1>content of father block</h1>
-            {% endblock %}
+                <h2 class="title"> Título de prueba </h2>
+
+                {% block content %}
+                <!--here goes the block content of each component-->
+                <h1>content of father block</h1>
+                {% endblock %}
+
+            </div>
+
         </div>
 
         <footer>
-            Aprendiendo Django &copy; Jeronimo Mayorca
+            Learning Django &copy; Jeronimo Mayorca
         </footer>
     </body>
 </html>
