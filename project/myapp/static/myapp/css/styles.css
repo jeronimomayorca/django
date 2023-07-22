@@ -11,6 +11,17 @@ body{
     background-color: #F2F2F2;
 }
 
+.box p, .box ul, .box li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 1rem;
+}
+
+.foot p{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
 
 /*header styles*/
 header{
@@ -49,7 +60,7 @@ header{
 
 nav{
     width: 1250px;
-    height: 40px;
+    height: 70px;
     background-color: #1b1e1f;
     border: 1px solid #333333;
     margin: 0 auto;
@@ -63,7 +74,7 @@ nav ul{
 }
 
 nav ul li{
-    line-height: 40px;
+    line-height: 4.375rem;
     float: left;
 }
 

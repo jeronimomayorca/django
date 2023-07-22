@@ -1,22 +1,25 @@
-from django.shortcuts import render, HttpResponse
-
-navbar = """
-
-"""
+from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, "index.html")
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    return render(request, "contact.html")
 
 
 def about_me(request):
-    return render(request, 'about_me.html')
+    qualities = ["clever", "cheerful", "analytical"]
+
+    return render(request, "about_me.html", {"qualities": qualities})
 
 
-# view with parameters and optional parameters
-def say_hi(request, name='', surname=''):
-    return HttpResponse(navbar + f"Hello {name} {surname}")
+def say_hi(request):
+    num = 46
+    is_even = False
+
+    if num % 2 == 0:
+        is_even = True
+
+    return render(request, "say_hi.html", {"is_even": is_even, "num": num})
