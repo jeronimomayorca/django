@@ -25,4 +25,6 @@ urlpatterns = [
     path("contact/", views.contact, name="contact"),
     path("about-me/", views.about_me, name="about-me"),
     path("say-hi/", views.say_hi, name="say-hi"),
+    path("create-article/<str:title>/<str:content>/<str:published>", views.create_article, name="create-article"),
+    path("get-article", views.get_article, name='get-article')
 ]
