@@ -25,6 +25,19 @@ urlpatterns = [
     path("contact/", views.contact, name="contact"),
     path("about-me/", views.about_me, name="about-me"),
     path("say-hi/", views.say_hi, name="say-hi"),
-    path("create-article/<str:title>/<str:content>/<str:published>", views.create_article, name="create-article"),
-    path("get-article", views.get_article, name='get-article')
+    path(
+        "create-article/<str:title>/<str:content>/<str:published>",
+        views.create_article,
+        name="create-article",
+    ),
+    path("get-article/", views.get_article, name="get-article"),
+    path("edit-article/<int:id>", views.edit_article, name="edit-article"),
+    path("article/", views.list_article, name="list-article"),
+    path("motorcycle/", views.list_motorcycle, name="list-motorcycle"),
+    path(
+        "create-motorcycle/<str:brand>/<str:reference>/",
+        views.create_motorcycle,
+        name="create-motorcycle",
+    ),
+    path("delete-article/<int:id>", views.del_article, name="delete-article"),
 ]
