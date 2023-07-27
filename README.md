@@ -1,8 +1,17 @@
  # How to deploy 
-   clone the repo: ```git clone https://github.com/jeronimomayorca/practice-django.git```
+   1. clone the repo: 
    
-   navigate to the path where you downloaded the repo and enter to 'project' folder in the terminal and execute:
-   ```python manage.py runserver```
+   - ```git clone https://github.com/jeronimomayorca/practice-django.git```
+   
+   
+   2. navigate to the path where you downloaded the repo in the terminal and enter:
+   
+   - ```cd project```
+
+
+   3. and finally execute:
+   
+   - ```python manage.py runserver```
 
   
   and do ctrl+click in the local adress to go!
