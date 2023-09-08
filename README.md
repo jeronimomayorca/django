@@ -19,7 +19,7 @@
   
   ### required installations:
   1. python: https://www.python.org/downloads/
-  2. django: run the command ```pip install django```
+  2. after installing python, run  ```pip install django```
 
 
    
